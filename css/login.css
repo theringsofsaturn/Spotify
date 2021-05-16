@@ -1,0 +1,276 @@
+body {
+    background: white;
+    font-family: circular-spotify-ui, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.login-logo img {
+    width: 200px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    max-width: 100%;
+    padding: 10px 0 10px;
+    text-align: center;
+}
+
+.social-container {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.social-container>span {
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: normal;
+    margin-top: 5px;
+    margin-bottom: 12px;
+    font-family: inherit;
+    font-weight: 900;
+    color: inherit;
+}
+
+.facebook-login {
+    font-size: 14px;
+    letter-spacing: 2px;
+    width: 450px;
+    height: 48px;
+    min-width: 160px;
+    border-radius: 500px;
+    background-color: rgb(59, 89, 152);
+    color: white;
+    white-space: normal;
+    line-height: 1;
+    padding-top: 14px;
+    padding: 16px 14px 18px;
+    margin-bottom: 0;
+    font-weight: 700;
+    text-align: center;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    display: block;
+    width: 100%;
+    user-select: none;
+}
+
+.facebook-login:hover {
+    background-color: rgb(64, 105, 194);
+    transition-duration: .3s;
+}
+
+.apple-login {
+    font-size: 14px;
+    letter-spacing: 2px;
+    width: 450px;
+    height: 48px;
+    min-width: 160px;
+    border-radius: 500px;
+    color: #fff;
+    background-color: #000;
+    white-space: normal;
+    line-height: 1;
+    padding-top: 14px;
+    padding: 16px 14px 18px;
+    margin-bottom: 0;
+    font-weight: 700;
+    text-align: center;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    display: block;
+    width: 100%;
+    user-select: none;
+}
+
+.apple-login:hover {
+    background-color: rgb(53, 53, 53);
+    transition-duration: .3s;
+}
+
+.google-login {
+    font-size: 14px;
+    letter-spacing: 2px;
+    width: 450px;
+    height: 48px;
+    min-width: 160px;
+    border-radius: 500px;
+    color: #616467;
+    box-shadow: inset 0 0 0 2px #616467;
+    background-color: transparent;
+    white-space: normal;
+    line-height: 1;
+    padding-top: 14px;
+    padding: 16px 14px 18px;
+    margin-bottom: 0;
+    font-weight: 700;
+    text-align: center;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    display: block;
+    width: 100%;
+    user-select: none;
+}
+
+.google-login:hover {
+    background-color: #616467;
+    color: white;
+    transition-duration: .3s;
+}
+
+.input-group {
+    font-weight: bold;
+}
+
+.input-group>input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid;
+}
+
+/* .hr-lines-and-or-text>hr {
+    width: 100%;
+} */
+
+hr {
+    width: 100%;
+}
+
+.hr-lines-and-or-text {
+    margin-top: 1rem;
+}
+
+.or {
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 1px;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+}
+
+.forgot-password {
+    color: #616467;
+    text-decoration: underline;
+    background-color: transparent;
+    font-weight: 400;
+    font-size: 16px;
+    display: flex;
+    padding-top: 1rem;
+    cursor: pointer;
+}
+
+.forgot-password:hover {
+    color: #15883e;
+}
+
+.remember-me {
+    padding-left: 1.75em;
+    font-weight: 400;
+    display: inline-block;
+    max-width: 100%;
+    padding-top: 1rem;
+    color: #616467;
+    cursor: pointer;
+}
+
+.custom-control-input:checked~.custom-control-label::before {
+    background-color: rgb(21, 136, 62);
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.remember-and-login {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.green-login {
+    color: #fff;
+    background-color: #15883e;
+    border-radius: 500px;
+    width: 210px;
+    height: 48px;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 2px;
+    white-space: normal;
+    line-height: 1;
+    padding: 16px 14px 18px;
+    border-width: 0;
+    letter-spacing: 2px;
+    min-width: 160px;
+}
+
+.green-login:hover {
+    color: #fff;
+    background-color: #19b34f;
+    width: 210px;
+    height: 48px;
+    font-weight: bold;
+    font-size: 14px;
+    align-items: center;
+    cursor: pointer;
+    transition-duration: .3s;
+}
+
+.sign-up-container {
+    text-align: center;
+}
+
+.sign-up-container>span {
+    letter-spacing: normal;
+    font-size: 16px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    font-family: inherit;
+    font-weight: 900;
+    line-height: 1.1;
+    color: inherit;
+    display: block;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.btn-signup {
+    width: 450px;
+    height: 48px;
+    border-radius: 500px;
+    padding: 16px 14px 18px;
+    font-size: 14px;
+    line-height: 1;
+    color: #616467;
+    box-shadow: inset 0 0 0 2px #616467;
+    background-color: transparent;
+    border-width: 0;
+    letter-spacing: 2px;
+    white-space: normal;
+    margin-bottom: 0;
+    font-weight: 700;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    font-family: inherit;
+    overflow: visible;
+}
+
+.btn-signup:hover {
+    background-color: #616467;
+    color: white;
+    transition-duration: .3s;
+}

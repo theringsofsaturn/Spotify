@@ -1,0 +1,129 @@
+body{
+    
+    min-height:250vh;
+    background: linear-gradient(180deg, rgba(24,18,21,1) 25%, rgba(18,18,18,1) 34%);
+    /* background: linear-gradient(163deg, rgba(36,68,107,1) 27%, rgba(19,35,55,1) 52%, rgba(4,7,11,1) 82%);  */
+}
+
+ /* Scrollbar  */
+
+ ::-webkit-scrollbar {
+    width: 8px;
+   
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: rgb(0, 0, 0);
+    ;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+   
+    
+    background-color: rgba(63, 62, 62, 0.897); 
+  }
+
+.page-nav{
+    position: fixed;
+    padding-left:230px ;
+    width: 100%;
+    left:0;
+    top:0;
+    z-index:9;
+    padding-top:20px;
+    transition: background-color 1s;
+   
+    
+}
+
+
+
+.page-nav a{
+    position: relative;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: .3ch;
+    color:#9CA6B2;
+   
+}   
+.page-nav a::before{
+    content : "";
+    position: absolute;
+    left    : 50%;
+    bottom  : 0;
+    height  : 2px;
+    width   : 50%;  /* or 100px */
+    background-color: #32AA56;
+    transform: translate(-50%, 0);
+    opacity:0;
+}
+
+.page-nav a:hover::before{
+    opacity:1;
+}
+
+.page-nav a:hover{
+    color: white;
+}
+
+
+
+
+.bgc-purple{
+    background-color: #1A1316;
+    padding-bottom: 20px;
+}
+
+
+
+main{
+    padding-left:230px;
+    padding-top:90px;
+    
+}
+    main h2{
+        font-size: 1.6rem;
+        font-weight: 600;
+        line-height: 45px;
+        color:white;
+       
+    }
+
+    .card{
+        background-color: #171717;
+        border:none;
+    }
+
+    .card p{
+        font-size: 12px;
+        color:#D7D7D7;
+        font-weight: 600;
+    }
+
+    .card:hover{
+        background-color: #282828d5;
+       
+    }
+
+    /* play buttons on hover */
+
+    .card svg{
+        position: absolute;
+        background-color: #32AA56;
+        padding:5px;
+        bottom:35%;
+        left:70%;
+        border-radius: 50%;
+        opacity:0;
+    }
+
+   .card:hover  svg{
+       opacity:1;
+   }
+
+   .card svg:hover{
+       width:32px;
+       height:32px;
+       cursor:pointer;
+   }

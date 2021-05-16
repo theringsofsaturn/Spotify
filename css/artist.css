@@ -1,0 +1,410 @@
+/* Body */
+
+body {
+  
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat";
+}
+
+/* The sidebar menu */
+
+.sidenav {
+    height: 100%;
+    /* Full-height: remove this if you want "auto" height */
+    width: 200px;
+    /* Set the width of the sidebar */
+    position: fixed;
+    /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 2;
+    /* Stay on top */
+    top: 0;
+    /* Stay at the top */
+    left: 0;
+    background-color: #000000;
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 20px;
+}
+
+/* The navigation menu links */
+
+.sidenav-top a {
+    padding-left: 20px;
+    margin-bottom: 15px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    color: #76787A;
+    display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+
+.sidenav-top a:hover {
+    color: #f1f1f1;
+}
+
+.logo-nav {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.logo-nav img {
+    width: 80%;
+    max-height: 50px;
+}
+
+/* Pseudo elements for top sidenav links  */
+
+.sidenav-top-links a::before {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 25px;
+    background-color: #32AA56;
+    left: 0;
+    opacity: 0;
+}
+
+.sidenav-top-links a:hover::before {
+    opacity: 1;
+}
+
+/* The bottom sidebar (Install App & Name Logo) */
+
+.sidenav-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+    right: 15%;
+    margin-bottom: 60px;
+}
+
+.install {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 30px;
+}
+
+.install i {
+    font-size: 24px;
+    color: #76787A;
+}
+
+.install p {
+    font-size: 12px;
+    margin-left: 10px;
+    margin-top: 15px;
+    font-weight: 700;
+    word-spacing: 0px;
+    color: #76787A;
+}
+
+.user {
+    display: flex;
+    margin: 10px auto;
+    font-size: 12px;
+}
+
+.user p {
+    margin-left: 10px;
+    margin-top: 2px;
+    font-weight: 600;
+    color: #76787A;
+}
+
+/* The border between user name and install app */
+
+hr {
+    background-color: #76787A;
+    width: 140px;
+    margin: 5px auto 0px 0;
+}
+
+/* The main content */
+
+#main-content {
+    position: absolute;
+    top: 0;
+    left: 200px;
+    /* max-height: calc(100vh - 90px); */
+    min-height: calc(130vh - 90px);
+    /* min-height: 90vh; */
+    max-width: calc(100% - 200px);
+    margin: 0;
+    padding: 0;
+    background-color: rgb(18, 18, 18);
+    background-image: url('/assets/bg-queen.jpg');
+    background-size: contain;
+    background-position-y: 18em;
+}
+
+/* The main content header with artis name and background */
+
+#main-content-header {
+    width: 100%;
+    height: 40vh;
+    /* background-image: url('/assets/bg-queen.jpg'); */
+    /* background-position: center;
+    background-size: cover; */
+    /* background-position-y: 15.5em; */
+    /* opacity: 0.6; */
+}
+
+/* The artist name text */
+
+#buttons {
+    margin-top: auto;
+    margin-left: 20px;
+}
+
+#artist-name {
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+#artist-name p:first-child {
+    font-size: 10px;
+    letter-spacing: 0.1rem;
+    color: #bbbbbb;
+}
+
+#artist-name p:nth-child(2) {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+/* The artist name buttons (Play & Follow buttons) */
+
+#artist-name-buttons button {
+    width: 130px;
+    border-radius: 40px;
+    font-size: 10px;
+}
+
+#artist-name-buttons button:first-of-type {
+    background-color: rgb(26, 26, 26);
+    opacity: 60%;
+    border: 2px solid white;
+    color: white;
+    font-weight: 700;
+}
+
+#artist-name-buttons button:nth-of-type(2) {
+    background-color: rgb(26, 26, 26);
+    opacity: 60%;
+    border: 2px solid white;
+    color: white;
+    font-weight: 700;
+}
+
+#artist-name-buttons>* {
+    padding: 5px 10px;
+    margin-right: 10px;
+}
+
+/* The artist name buttons hover effects */
+
+#artist-name-buttons :first-child:hover {
+    background-color: rgb(29, 185, 84);
+    opacity: unset;
+    transform: scale(1.12);
+    transition: .3s;
+}
+
+#artist-name-buttons :nth-child(2):hover {
+    background-color: rgb(29, 185, 84);
+    opacity: unset;
+    transform: scale(1.12);
+    transition: .3s;
+}
+
+/* The artist info */
+
+#artist-info {
+    overflow: auto;
+}
+
+#artist-info nav {
+    display: flex;
+    justify-content: center;
+}
+
+#artist-info nav p {
+    padding: 10px 10px;
+    font-size: 10px;
+    letter-spacing: 0.1rem;
+    color: white;
+    font-weight: 700;
+}
+
+/* Artist info hover and shadow effects */
+
+/* Shadow */
+
+#artist-info-header {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #181818 10%) !important;
+    transform: translateY(-5px);
+}
+
+/* Hover */
+
+#artist-info-header nav p:hover {
+    cursor: pointer;
+    color: rgb(29, 185, 84) !important;
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+/* Albums */
+
+#albums {
+    width: 90%;
+}
+
+#albums>p {
+    color: white;
+    font-size: 25px;
+}
+
+#albums .col p {
+    font-size: 9px;
+    text-align: center;
+    font-weight: 700;
+    color: white;
+}
+
+#albums .col .cardBody {
+    background-color: #181818;
+    margin-bottom: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#albums .col img {
+    height: 120px;
+    object-fit: cover;
+}
+
+#albums .card {
+    border-radius: 0 !important;
+    border: none !important;
+}
+
+/* Albums cards hover effect */
+
+.col:hover {
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+/* .cardBody:hover{
+    transform: scale(1.1);
+    transition:.3s;
+} */
+
+#albums .col:hover {
+    background-color: #3f3f3fd5;
+}
+
+/* Bottom Bar */
+
+/* Look on Mobile Devices */
+
+@media only screen and (min-width:768px) and (max-width:1025px) {
+    #main-content {
+        left: 0;
+        max-width: 100%;
+        min-height: calc(100vh - 90px);
+    }
+}
+
+@media(max-width:767px) {
+    .sidenav {
+        display: none;
+    }
+    #main-content {
+        left: 0;
+        max-width: 100%;
+        min-height: calc(100vh - 90px);
+    }
+    #mobile-footer {
+        display: flex;
+        justify-content: space-around;
+        position: fixed;
+        background-color: rgb(0, 0, 0);
+        max-height: 20vh;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        z-index: 2;
+    }
+    #mobile-footer svg {
+        padding-top: 9px;
+        padding-bottom: 9px;
+        color: rgb(129, 129, 129);
+        font-size: 30px;
+    }
+    #mobile-footer svg:hover {
+        color: white;
+    }
+}
+
+/* The player Footer */
+
+/* Bottom left - The info of the song */
+
+#song-playing {
+    justify-content: flex-start;
+    display: flex;
+    margin-top: 5px;
+    margin-left: 0px;
+    margin-bottom: 5px;
+    padding-left: 10px;
+    color: white;
+}
+
+#song {
+    margin: 5px;
+    padding-left: 10px;
+    padding-right: 20px;
+}
+
+#song-title {
+    font-size: 12px;
+    margin: 0;
+}
+
+#song-playing svg {
+    font-size: 20px;
+    margin: auto 10px;
+}
+
+#band {
+    font-size: 10px;
+    margin: 0;
+}
+
+.heart:hover, .pip:hover{
+    fill:white;
+}
+
+/* Icons next to Volume section */
+
+#icons-next-to-volume {
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+}
+
+#icons-next-to-volume svg {
+    padding-left: 5px;
+    /* padding-right: 5px; */
+}
